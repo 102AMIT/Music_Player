@@ -1,0 +1,1250 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    color:white;
+}
+
+
+::placeholder{
+    color: rgb(245, 237, 237);
+    opacity: 0.6;
+}
+
+.text-color{
+    color: whitesmoke
+}
+
+.text-style{
+    font-weight: 600; 
+    /* color:honeydew; */
+    font-family: 'Oswald', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    background-color:#0C1027 ;
+    /* border: 2px solid gray; */
+}
+
+
+
+/* <----------------------- Header NAV section Strat from here ---------------------> */
+
+
+
+.header-nav{
+    height: 3.9rem;
+    width: 100%;
+    /* margin: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    
+}
+
+
+
+/* <---------------------This is nav LEFT section of header START------------------> */
+
+
+
+
+.left-section{  
+    height: 3.6rem;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;    
+}
+
+
+.logo-image{
+    height: 98%;
+    margin: 0px 30px;
+    /* border: 1px solid red; */
+    align-items: center;
+    
+}
+
+
+
+.left-section p{
+    margin-left: 2rem;
+    font-size: 1.2rem;
+
+    animation: translate 2s ease-in-out infinite alternate-reverse;
+    /* border: 2px solid pink; */
+}
+
+@keyframes translate{
+
+    0%{
+       color: rgb(29, 141, 29);
+    }
+    50%{
+        color: fuchsia;
+    }
+    100%{
+        color:blueviolet;
+    }
+}
+
+.left-section a{
+
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* <****************This is nav LEFT section of header END***************> */
+
+
+
+
+
+
+/* <---------------------This is nav RIGHT section of header START-------------------> */
+
+
+
+
+
+.right-section{
+    height: 2.5rem;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+}
+#input-section input{
+    width: 85%;
+    border: 2px solid #2d3772;
+    border-radius: 5px;
+}
+
+#input-section{
+    
+    width:70%;
+    background-color:#12193E;
+    border-radius: 5px;
+    
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+#input-section input,button{
+    height: inherit;
+    padding: 2px;
+    background:transparent;
+    border: 0px transparent;
+    color:white;
+    font-size: 1rem;  
+    opacity: 0.9;
+    outline: none;
+    margin-left: 8px;
+    
+} 
+
+#input-section button i{
+    
+    cursor: pointer;
+    background: transparent;
+    margin-left: 3px;
+
+}
+
+
+
+.notification-icon button i{
+    cursor: pointer;
+    margin-right: 5px;
+    animation: bell-icon 3s ease-in-out infinite alternate;
+
+}
+
+@keyframes bell-icon{
+    0%{
+        transform: rotate(0deg);
+        color:rgb(255, 255, 255);
+    }
+    50%{
+        transform: rotate(-45deg);
+        color:fuchsia;
+    }
+    100%{
+        transform: rotate(45deg);
+        color:rgb(129, 221, 24);
+    }
+
+}
+
+.profile-logo {
+    /* border: 1px solid greenyellow; */
+    height: 120%;
+    width: 20%;
+    
+}
+.profile-logo a img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.profile-logo a img:hover{
+    opacity: 0.8;
+    box-shadow: 0px 0px 2px 1px lightgoldenrodyellow
+}
+
+
+
+
+
+
+/* <****************This is nav RIGHT section of header END***************> */
+
+
+
+
+
+
+/* <********************** Header NAV section END  here 
+***********************> */
+
+
+
+
+
+/* <----------------------- MAIN section Strat from here ---------------------> */
+
+
+
+
+.main-section{
+    height: 92%;
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* border:2px solid white; */
+}
+
+.main-left{
+
+    height: 90%;
+    width: 60%;
+    /* border: 1px solid orangered; */
+    margin: 10px 0px 0px 15%;
+    overflow-y: scroll;
+
+
+    /*Important part here we handling the sliding part of page */
+
+    /* border: 2px solid blue; */
+    scrollbar-width: none; /*Hiding scrollbars in  Firefox */
+    -ms-overflow-style: none;  /* Hiding scrollbars in Internet Explorer 10+ */
+}
+    /* Hiding Scrollbars in GOOGLE CHROME */
+.main-left::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+ /* <----------left large section start from here ----------->  */
+
+
+
+
+
+.left-large-section{
+
+    height: 25%;
+    width: 100%;
+    /* border: 2px solid green; */
+    padding: 10px;
+    display: flex;
+    background-color: #030e22;
+ 
+}
+
+.left-large-section div a img{
+    height: 100%;
+    width:100%;   
+}
+
+.img-r-l-s{ 
+    width: 35%;
+    transition:all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+}
+
+.img-r-l-s:hover{
+        transform: scale(1.2) translate(3px,1px);
+        opacity: 0.9;       
+}
+
+
+
+/* *********left large section closed here *********  */
+
+
+
+
+ /* <----------Latest release section Start here------------> */
+
+
+
+
+.latest-release-section{
+    height:40%;
+    width: 100%;
+    /* border: 2px solid rgb(199, 25, 54); */
+    margin-top: 20px;   
+}
+.latest-release{
+    height: 80%;
+    width: 90%;
+    /* border: 2px solid rgb(25, 207, 25); */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-left: 5%;
+}
+
+.latest-section{
+    height: 40%;
+    width: 30%;
+    /* border: 1px solid rgb(55, 53, 156); */
+    display: flex;
+    margin-top:3px;
+    margin-right: 0px 10px 0px 20px;
+    /* padding: 1%; */
+    /* justify-content: space-around; */ 
+    
+}
+
+.latest-release div img{
+    height: 100%;
+    width: 100%;
+    /* border-radius: 3px;       */
+}
+
+.latest-image{
+    height: 100%;
+    width: 30%;
+    box-shadow: 0px 0px 2px 2px  rgb(191, 196, 191); 
+}
+
+.latest-text{
+    height: 90%;
+    width: 70%;
+    /* border:1px solid red; */
+    color: white;
+    font-size: 12px;
+    background: transparent;
+}
+
+.p-text{
+    margin-top: 10px;
+    opacity: 0.8;
+    color: snow;
+    background: transparenst;
+    margin-left: 14px;
+    font-size: 15px; 
+}
+
+.p-time{
+    position: relative;
+    left: 73%;
+    top:-40%;
+    width: 20%;
+    opacity: 0.6;
+    background: transparent;
+    /* border: 1px solid pink; */
+}
+
+.latest-text i{
+    position: relative;
+    left: 75%;
+    top:-40%;
+    opacity: 0.6;
+    background: transparent;
+    cursor: pointer;
+}
+
+.latest-text i:hover{
+    color: coral;
+    opacity: 0.9;
+}
+
+.latest-image:hover img{
+    opacity: 0.8;
+}
+
+.latest-section:hover{
+    box-shadow: 0px 0px 3px 3px #444e7e;
+    border-radius: 0px;
+    /* background:#6954ad;  */
+}
+
+.latest-image i{
+    position: relative;
+    left:45%;
+    top:-70%;
+    visibility: hidden;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+
+.latest-image:hover i{
+    visibility: visible;
+    opacity: 0.9;
+}
+
+
+
+
+ /* ********Latest release section closed here*******  */
+
+
+
+
+
+
+  /* <----------Popular Artists section Start here----------> */
+
+
+
+
+
+.popular-artist-section{
+    height:35%;
+    width: 100%;
+    margin-top: 10px; 
+    /* border: 2px solid rgb(218, 218, 15); */  
+}
+
+.popular-artist{
+    height: 90%;
+    width: 11.8%;
+    /* border: 2px solid rgb(143, 12, 12); */
+    margin-top:5px;
+}
+
+.popular-artist-section-div{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid pink; */
+    margin-top: 12px;
+}
+
+.popular-artist img{
+    height: 65%;
+    width: 70%;
+    /* border: 2px solid white; */
+    border-radius:50% ;
+    margin-top: 15px;
+    margin-left: 16%;
+    /* overflow: hidden; */
+    transition: all 0.2s ease-in-out ;
+}
+
+.popular-text{
+    position: relative;
+    text-align: center;
+    margin-top: 3px;
+    color: snow;
+    background: transparent;
+    opacity: 0.8;
+    /* letter-spacing: 0.1px; */   
+}
+
+.popular-artist img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    color: rgb(226, 214, 214);
+    transform:scale(1.1);
+    box-shadow: 0px 0px 3px 3px lightgray;  
+}
+
+
+
+
+/* ********Popular Artist section closed here*******  */
+
+
+
+
+
+/* --------------station-music-section start from here----------  */
+
+
+
+
+
+
+
+.station-music-section{
+    margin-top: 30px;
+    height: 30%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    background-image: linear-gradient(90deg, rgb(105, 53, 53),rgb(139, 123, 91));   
+}
+
+.station-music{
+    height: 100%;
+    width: 25%;
+    /* border: 2px solid white; */
+    /* background-color: rgb(18, 13, 48); */
+    
+
+}
+
+.station-music-div1{
+    height: 80%;
+    width: 80%;
+    border: 1px solid orangered;
+    margin: 10%;
+    background-color:orangered;
+    border-radius: 10%;
+    
+}
+
+.station-music-div2{
+    height: 80%;
+    width: 80%;
+    border: 1px solid rgb(35, 142, 62);
+    margin: 10%;
+    background-color: rgb(35, 142, 62);
+    border-radius: 10%;  
+}
+.station-music-div3{
+    height: 80%;
+    width: 80%;
+    border: 1px solid rgb(97, 22, 94);
+    margin: 10%;
+    background-color: rgb(92, 17, 89);
+    border-radius: 10%;
+}
+
+.station-music-div3 img{
+    height:60%;
+    width: 60%;
+    margin-top: 4px;
+    margin-left: 20%;
+    border-radius: 50%;
+    animation: rotate 1s 1s  ease-in-out infinite ;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.station-text{
+
+    height: 18%;
+    width: 100%;
+    /* border: 2px solid greenyellow; */
+    
+}  
+
+
+
+
+
+.station-text p{
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    animation: station 2s ease-in-out infinite alternate;
+    
+}
+
+@keyframes station{
+
+    0%{
+        color: rgb(80, 255, 109);
+    }
+
+    30%{
+        color: rgb(245, 242, 84);
+    }
+
+    80%{
+        color:rgb(206, 20, 97) 
+    }
+
+    100%{
+        color: rgb(22, 150, 182);
+    }
+}
+
+
+.station-other-music-section{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid yellowgreen; */
+    align-items: center;
+    justify-content: space-around;
+    display: flex;   
+}
+
+.station-other-music{
+
+    height:60%;
+    width: 13%;
+    /* border: 2px solid rgb(144, 154, 165); */
+    border-radius: 50%;
+    overflow: hidden;
+    
+    
+}
+
+.station-other-music img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: all 0.2s ease-in-out;
+    
+    
+}
+
+.station-other-music img:hover{
+    transform: scale(1.3);
+    
+}
+
+.station-other-music p{
+    position: relative;
+    text-align: center;
+    margin-top: -70px;
+    opacity: 0.8;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    height: 10%;
+    width: 90%;
+    margin-left: 4px;
+    cursor: pointer;
+  
+}
+.station-other-music:hover p{
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+/* *************station-music-section end here************  */
+
+
+
+
+
+
+/* --------------Mood-music-section start from here----------  */
+
+
+.mood-music-section{
+    height:25%;
+    width: 100%;
+    /* border: 2px solid fuchsia; */
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.mood-music{
+    height: 100%;
+    width: 32.5%;
+    /* border: 1px solid white; */
+    overflow: hidden;
+    
+}
+
+.mood-music img{
+    height:100%;
+    width: 100%;
+    
+    transition:all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s;
+    cursor: pointer;
+
+}
+
+.mood-music img:hover{
+    overflow:hidden;
+    transform: scale(1.2) translate(0px,1px);
+    font-weight: 900;    
+
+}
+.mood-music p{
+    position: relative;
+    text-align: center;
+    margin-top: -90px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition:all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s;
+    cursor: pointer;
+}
+
+.mood-music:hover p{
+
+    transform: scale(0.9) translate(0px,1px);
+
+}
+
+
+
+
+   /* <************ --------------Mood-music-section Closed here************  */
+
+
+
+
+
+ /* --------------Latest-hindi-music-section start from here----------  */
+
+ .latest-hindi-section{
+    height: 33%;
+    width: 100%;
+    /* border: 2px solid gray; */
+    margin-top: 20px;
+ }
+
+ .latest-hindi{
+     height:85%;
+     width: 100%;
+     margin-top:10px ;
+     /* border: 2px solid lightslategray; */
+     display: flex;
+     
+ }
+
+ .latest-hindi-song-image{
+     height: 100%;
+     width: 100%;
+     padding: 1%;
+     
+ }
+
+ .latest-hindi-song-image img:hover{
+
+    box-shadow: 0px 0px 3px 2px lightslategrey;
+    opacity: 0.7;
+
+ }
+
+ .latest-hindi-song-image img{
+
+    height: 70%;
+    width:100%;
+    /* border: 2px solid greenyellow; */
+    justify-content: space-around;
+    cursor: pointer;
+     
+ }
+
+ /* Text1 and Text2 section are same for Both */
+.text1{
+     font-size: 0.8rem;
+     color:whitesmoke;
+     opacity: 0.9;
+     cursor: default;
+     
+ }
+.text2{
+    font-size: 0.7rem;
+    color:lightslategray;
+    opacity: 0.8;
+}
+
+/* ********Latest Hindi section closed here*******  */
+
+
+ /* --------------Latest-English-music-section start from here----------  */
+
+ .latest-english-section{
+    height: 33%;
+    width: 100%;
+    /* border: 2px solid gray; */
+    margin-top: 5px;
+ }
+
+ .latest-english{
+     height:85%;
+     width: 100%;
+     margin-top:5px ;
+     /* border: 2px solid lightslategray; */
+     display: flex;
+     
+ }
+
+ .latest-english-song-image{
+     height: 100%;
+     width: 100%;
+     padding: 1%;
+     cursor: pointer;
+     
+ }
+
+ .latest-english-song-image img:hover{
+
+    box-shadow: 0px 0px 3px 2px lightslategrey;
+    opacity: 0.7;
+
+ }
+
+ .latest-english-song-image img{
+
+    height: 70%;
+    width:100%;
+    /* border: 2px solid greenyellow; */
+    justify-content: space-around;
+     
+ }
+
+
+ 
+
+
+ /* ********Latest English section closed here*******  */
+
+
+
+
+
+ /* ----------------Aside section start from here(MAIN RIGHT SECTION------------------ */
+
+
+ /* -----------------------MAIN RIGHT SECTION START FROM HERE -------------------------- */
+
+.queue-main-right-section{
+    height: 100%;
+    width: 22%;
+    /* border: 2px solid white; */
+    margin-left: 1%;
+    box-sizing: border-box;
+
+}
+/* .option-bar{
+    box-sizing: border-box;
+    width: 10%;
+    height: 5%;
+    margin-top: 20%;
+} */
+
+.queue-option-bar{
+    height: 10%;
+    width: 8%; 
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C1027;
+    right: 2%;
+    bottom: 80%; 
+    box-sizing: border-box;
+    padding: 1%;
+    overflow: hidden;
+    transform: scale(0);
+    
+}
+
+#queue-option:target{
+
+    transform:scale(1);
+    opacity: 0.5;
+
+}
+.queue-right{
+    margin-right: 7%;
+    font-weight: 600;
+    
+}
+.queue-left {
+    margin-left: 7%;
+    font-weight: 600;
+}
+
+
+.queue-heading{
+    height:10%;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid yellowgreen;   */
+    
+}
+
+.queue-option-bar p{
+    cursor: pointer;
+}
+.queue-option-bar p a{
+    text-decoration: none;
+}
+
+
+.queue-song-list{
+
+    height: 77%;
+    width: 92%;
+    margin-left:5%;
+    padding: 3%;
+    
+    /* border: 1px solid hotpink; */
+    overflow: scroll;
+  
+    /*Important part here we handling the sliding part of page */
+
+    /* border: 2px solid blue; */
+    scrollbar-width: none; /*Hiding scrollbars in  Firefox */
+    -ms-overflow-style: none;  /* Hiding scrollbars in Internet Explorer 10+ */
+}
+
+/* Hiding Scrollbars in GOOGLE CHROME */
+.queue-song-list::-webkit-scrollbar {
+/* Hiding Scrollbars in GOOGLE CHROME */
+    display: none;
+
+}
+.queue-song-column-wise{
+    height:90%;
+    width: 100%;
+    /* border: 2px solid yellowgreen; */   
+}
+
+.list-queue{
+    margin-top: 5%;
+    height: 13%;
+    width: 100%;
+    display: flex;
+    /* border: 2px solid fuchsia; */
+}
+
+.list-queue:hover{
+    box-shadow: 0px 0px 3px 3px rgb(70, 107, 145);   
+}
+
+
+
+.queue-image1{
+    height: 100%;
+    width: 30%;
+    /* border: 2px solid pink; */
+    
+}
+
+.queue-image-section img{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    /* border:1px solid lightslategray; */
+    
+}
+
+.queue-image-section{
+    height: 100%;
+    width: 100%;
+}
+
+.queue-image-section i{
+    visibility: hidden;
+    position: relative;
+    left:45%;
+    top:-70%
+}
+
+.queue-image-section:hover i{
+    /* border: 1px solid green; */
+    visibility: visible;
+    opacity: 0.8;
+    cursor: pointer; 
+}
+
+.queue-text-section{
+    margin-top: 4%;
+    margin-left: 3%;
+    width:50%;
+    height: 60%;
+    display: block;
+    /* border: 1px solid tomato; */
+}
+
+.queue-text-section a{
+    text-decoration: none;
+}
+
+.queue-text1{
+    font-size: 0.9rem;
+    cursor:default;
+    margin-bottom: 2px;
+}
+
+.queue-text1:hover{
+    opacity: 0.8;
+    color:rgb(134, 124, 122);
+}
+
+.queue-text2{
+    font-size: 0.6rem;
+    opacity: 0.6;
+}
+
+.queue-heart-section{
+
+    height: 40%;
+    width: 10%;
+    margin-top:5%;
+    margin-left:11%;
+    /* border: 1px solid gray; */
+}
+
+.queue-heart-section i{
+    margin-left: 25%;
+    cursor: pointer;
+    background: transparent;
+    
+}
+
+.queue-heart-section i:hover{
+    animation: heart-style 1s ease-in-out infinite alternate;
+}
+
+@keyframes heart-style{
+    0%{
+        color: fuchsia;
+    }
+    50%{
+        color: yellowgreen;
+    }
+    100%{
+        color: orangered;
+    }
+}
+
+
+
+/* ************Main Right Section End Here************ */
+
+
+
+
+
+  /* <--------------music controller bottom side of the page Start from here-------------->   */
+
+
+.music-controller{
+    height: 9%;
+    width: 100%;
+    /* border: 1px solid green; */
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    background-color: rgb(11, 14, 19);
+    padding: 4px;
+}
+/*<---------- Music controller left side section----------> */
+
+
+.music-controller-left{
+    height: 100%;
+    width: 30%;
+    /* border:1px solid rgb(67, 9, 121); */
+    margin-left: 5%;
+    display: flex;
+}
+
+.music-controller-left a img{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid fuchsia; */
+    border-radius: 0px;
+    padding: 3px;
+    box-shadow: 0px 0px 1px 2px silver;
+}
+
+.left-side-icon{
+    height: 30%;
+    width: 20%;
+    /* border: 1px solid white; */
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 12%;
+}
+
+.music-controller-left a {
+    text-decoration: none;
+}
+
+.left-side-icon i{
+    margin-left: 10px;  
+}
+
+.left-side-icon i:hover{
+    color:fuchsia;
+    opacity: 0.7;
+}
+
+.left-side-text{
+    height: 100%;
+    width: 40%;
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-left: 4%;
+    /* border: 1px solid cyan; */
+}
+.left-side-text-secondary{
+    margin-top: 3px;
+    opacity: 0.4;
+    color: snow;   
+}
+
+
+/*<*************** Music controller left side section closed here*************> */
+
+
+
+/*<------------ Music controller Middle side section Start from here--------------> */
+
+.music-controller-middle{
+
+    height: 100%;
+    width: 70%;
+    /* border:1px solid red; */
+    justify-content: center;
+    
+}
+
+.console-image{
+    height:45%;
+    width:40%;
+    /* border:1px solid white; */
+    margin-left: 30%;
+    justify-content: space-between;
+    display: flex;
+    
+}
+.console-image i{
+    margin-top: 4px;
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+.console-image i:active{
+    box-shadow: 0px 0px 2px px whitesmoke;
+    opacity: 1;
+}
+
+.console-slider{
+    height: 50%;
+    width: 60%;
+    margin-left: 19.5%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-around;
+    padding: 6px;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.slider{
+    height: 25%;
+    margin-top: 5px;
+}
+
+.slider-time{
+    /* margin-right: 6px; */
+    margin-bottom: 3px;
+}
+
+.console-slider input{
+    width: 80%;
+    
+}
+
+.console-slider:hover{
+    opacity: 1;
+}
+
+/*<*************** Music controller Middle side section End here**************> */
+
+/*<------------ Music controller Right side section Start from here--------------> */
+
+
+.music-controller-right{
+    height: 100%;
+    width:25%;
+    /* border:1px solid red; */
+    margin-right:7%;
+    
+    display: flex;
+    opacity: 0.9;
+   
+    justify-content: space-between;
+    
+}
+.music-controller-right-icon{   
+    margin-top: 11%; 
+    display: flex;  
+    /* margin-left: 3px; */
+    /* border: 2px solid firebrick; */
+}
+
+.music-controller-right-icon i:active{
+    opacity: 1;
+    color: rgb(128, 125, 125)
+}
+.music-controller-right-controller{
+    margin-top: 10%;
+    
+}
+
+.slider-right{
+    /* appearance:none ; */
+    height:11% ; 
+    border-radius: 18%;
+}
+
+.slider-right:hover{
+    opacity: 0.7;
+}
+
+
+
+
+
+/*<*************** Music controller Right side section End here**************> */
+
+/* <--------------music controller --bottom side of the page End  here-------------->   */
+
+
+ 
+
+           /* --------------------- THANK YOU---------------------- */
+
+
+
+
+
+

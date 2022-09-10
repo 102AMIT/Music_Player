@@ -1,0 +1,1137 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    color:white;
+}
+
+
+::placeholder{
+    color: rgb(245, 237, 237);
+    opacity: 0.6;
+}
+
+.text-color{
+    color: whitesmoke
+}
+
+.text-style{
+    font-weight: 600; 
+    /* color:honeydew; */
+    font-family: 'Oswald', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    background-color:#0C1027 ;
+    /* border: 2px solid gray; */
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+}
+
+
+
+
+
+/* <----------------------- Header NAV section Strat from here ---------------------> */
+
+
+
+
+.header-nav{
+    height: 3.9rem;
+    width: 100%;
+    /* margin: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    
+}
+
+
+
+/* <---------------------This is nav LEFT section of header START------------------> */
+
+
+
+
+.left-section{  
+    height: 3.6rem;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;    
+}
+
+
+.logo-image{
+    height: 98%;
+    margin: 0px 30px;
+    /* border: 1px solid red; */
+    align-items: center;
+    
+}
+
+
+
+.left-section p{
+    margin-left: 2rem;
+    font-size: 1.2rem;
+
+    animation: translate 2s ease-in-out infinite alternate-reverse;
+    /* border: 2px solid pink; */
+}
+
+@keyframes translate{
+
+    0%{
+       color: rgb(29, 141, 29);
+    }
+    50%{
+        color: fuchsia;
+    }
+    100%{
+        color:blueviolet;
+    }
+}
+
+.left-section a{
+
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* <****************This is nav LEFT section of header END***************> */
+
+
+
+
+
+
+/* <---------------------This is nav RIGHT section of header START-------------------> */
+
+
+
+
+
+.right-section{
+    height: 2.5rem;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+}
+#input-section input{
+    width: 85%;
+    border: 2px solid #2d3772;
+    border-radius: 5px;
+}
+
+#input-section{
+    
+    width:70%;
+    background-color:#12193E;
+    border-radius: 5px;
+    
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+#input-section input,button{
+    height: inherit;
+    padding: 2px;
+    background:transparent;
+    border: 0px transparent;
+    color:white;
+    font-size: 1rem;  
+    opacity: 0.9;
+    outline: none;
+    margin-left: 8px;
+    
+} 
+
+#input-section button i{
+    
+    cursor: pointer;
+    background: transparent;
+    margin-left: 3px;
+
+}
+
+
+
+.notification-icon button i{
+    cursor: pointer;
+    margin-right: 5px;
+    animation: bell-icon 3s ease-in-out infinite alternate;
+
+}
+
+@keyframes bell-icon{
+    0%{
+        transform: rotate(0deg);
+        color:rgb(255, 255, 255);
+    }
+    50%{
+        transform: rotate(-45deg);
+        color:fuchsia;
+    }
+    100%{
+        transform: rotate(45deg);
+        color:rgb(129, 221, 24);
+    }
+
+}
+
+.profile-logo {
+    /* border: 1px solid greenyellow; */
+    height: 120%;
+    width: 20%;
+    
+}
+.profile-logo a img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.profile-logo a img:hover{
+    opacity: 0.8;
+    box-shadow: 0px 0px 2px 1px lightgoldenrodyellow
+}
+
+
+
+
+
+
+/* <****************This is nav RIGHT section of header END***************> */
+
+
+
+
+
+
+/* <********************** Header NAV section END  here 
+***********************> */
+
+
+
+/*---------------- Main section Start from here--------------  */
+
+.main-section{
+
+    height:100%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+
+/*---------------- Main Left section Start from here--------------  */
+
+.main-left-section{
+
+    height:94%;
+    width:60%;
+    margin-left: 8%;
+    /* border: 1px solid fuchsia; */
+
+}
+
+
+
+
+
+
+ /* ---------- Left section banner start from here  */
+
+
+
+.left-section-banner{
+    height:40%;
+    width: 100%;
+    margin-bottom: 2%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    background-color: #141B41;
+    padding: 15px;
+}
+
+.left-section-banner-image{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid red; */
+    background-image:linear-gradient(to bottom,transparent,rgb(16, 55, 170)),url(./media/images/background_image/banner\ arijit\ singh\ image.jpg);
+    background-size:cover;
+}
+
+
+.image-discription{
+    height: 90%;
+    width: 70%;
+    margin: 0% 0% 4% 3%;
+    /* border: 1px solid orangered;    */
+}
+
+.discription-heading{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid yellow; */
+}
+
+.discription-image-title1{
+    font-size: 1.5rem;
+    font-style: Verdana ;
+}
+
+.discription-image-title2{
+
+    font-size: 0.8rem;
+    margin-top: 8px;
+    opacity: 0.7;
+}
+
+.heading-description1{
+
+    font-size: 0.8rem;
+    margin-top: -2px;
+    color:rgb(165, 165, 165)
+}
+
+.heading-description2{
+    opacity: 0.8;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.discription-button-area{
+    height: 25%;
+    width: 60%;
+    /* border: 1px solid yellowgreen; */
+    margin-top: 20px;
+}
+
+.discription-button{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discription-button button{
+    height: 100%;
+    width: 70%;
+    /* border: 1px solid red; */
+    margin-left: -0.1px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+    
+    
+}
+
+.discription-button-title{
+    color: #fff;
+    font-size: bolder;
+}
+
+.follow-text{
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.discription-bottom-text{
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ************ Left section banner End here***********  */
+
+
+
+   /* ---------- Left section Song list start from here-----------  */
+
+.left-section-song-area{
+
+    height: 56%;
+    width: 100%;
+    /* border:1px solid green; */
+
+    overflow-y: scroll;
+
+    /*Important part here we handling the sliding part of page */
+
+    /* border: 2px solid blue; */
+    scrollbar-width: none; /*Hiding scrollbars in  Firefox */
+    -ms-overflow-style: none;  /* Hiding scrollbars in Internet Explorer 10+ */
+
+}
+
+    /* Hiding Scrollbars in GOOGLE CHROME */
+.left-section-song-area::-webkit-scrollbar {
+    display: none;
+}
+
+.left-section-song-list{
+
+    height: 18%;
+    width: 100%;
+    /* margin-top: 2.5%; */
+    /* border:2px solid orangered; */
+    /* background-color: #1A1E33; */
+}
+
+.left-section-song{
+    height: 100%;
+    width: 90%;
+    /* border: 1px solid white; */
+    display: flex;
+    margin-left:5%;
+    /* padding: 5px; */
+    margin-top: 3%;
+    background-color: #1A1E33;
+    
+}
+
+.left-section-song-image{
+    height: 100%;
+    width: 10%;
+    /* border: 1px solid red; */
+    margin-left: 5%;
+    
+}
+
+.left-section-song-image img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.left-section-song-image img:hover{
+
+    opacity: 0.6;
+}
+
+.left-section-song-image i{
+
+    position: relative;
+    margin-left:43%;
+    bottom: 68%;    
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.left-section-song-image i:hover{
+    opacity: 0.6;
+    color: yellowgreen;
+}
+
+.left-section-song-image-title{
+
+    height: 80%;
+    width: 25%;
+    /* border: 1px solid green; */
+    margin:1.5% 0% 0% 1.5%; 
+
+}
+
+.song-title-text1 {
+
+    opacity: 0.9;
+    color: azure;
+    font-weight: 600;
+    cursor: pointer;
+}
+.song-title-text1:hover{
+
+    color: coral;
+}
+
+.song-title-text2{
+    opacity: 0.6;
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+
+.left-section-song-time{
+    height: 40%;
+    /* border: 1px solid red; */
+    margin-top: 2%;
+    margin-left: 10%;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.left-section-song-icon{
+
+    height: 70%;
+    width: 7%;
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    margin-left: 35%;
+    margin-top: 1.8%;
+    justify-content: space-between;
+    
+}
+
+.left-section-song-icon1:hover i{
+    /* opacity: 0.8; */
+
+    animation: heart-style 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes heart-style{
+    0%{
+        color: rgb(27, 207, 81);
+    }
+    50%{
+        color: rgb(184, 146, 23);
+    }
+    100%{
+        color: rgb(141, 10, 27);
+    }
+}
+
+.left-section-song-icon2:hover i{
+
+    
+    animation: plus-style 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes plus-style{
+    0%{
+        color: rgb(182, 169, 182);
+    }
+    50%{
+        color: rgb(77, 110, 10);
+    }
+    100%{
+        color: rgb(170, 16, 137);
+    }
+}
+
+
+
+
+/* ***************Main Left section End here***************  */
+
+
+
+
+/*---------------- Main Right section Start from here--------------  */
+
+.main-right-section{
+
+    height:100%;
+    width:23%;
+    margin-left: 3%;
+    margin-top: 1%;
+    /* border: 1px solid fuchsia; */
+
+}
+
+
+
+/*---------------- Main Right section Similar Artists Start from here--------------  */
+
+.right-similar-artists-section{
+
+    height:40%;
+    width: 100%;
+    /* border: 1px solid rgb(37, 167, 95); */
+}
+
+/* Heading section start */
+
+.similar-artists-heading{
+
+    height: 10%;
+    width: 100%;
+    /* border: 1px solid goldenrod; */
+    display: flex;
+    justify-content: space-between;
+}
+.similar-artists-heading-text1{
+    font-family: "New Century Schoolbook, TeX Gyre Schola, serif";
+    font-size: 1.3rem;
+      
+}
+
+.similar-artists-heading-text2{
+    font-family: "New Century Schoolbook, TeX Gyre Schola, serif";
+    font-size: 0.9rem;
+    margin-top: 5px;
+    opacity: 0.8;
+    cursor: pointer;
+      
+}
+
+.similar-artists-heading a{
+    text-decoration: none;
+}
+
+/* heading section closed  */
+
+
+/* song list start */
+
+.similar-artists-song-list{
+
+    height: 97%;
+    width: 100%;
+    /* border: 1px solid rgb(192, 255, 195); */
+    
+    overflow-y: scroll;
+
+
+    /*Important part here we handling the sliding part of page */
+
+    /* border: 2px solid blue; */
+    scrollbar-width: none; /*Hiding scrollbars in  Firefox */
+    -ms-overflow-style: none;  /* Hiding scrollbars in Internet Explorer 10+ */
+}
+    /* Hiding Scrollbars in GOOGLE CHROME */
+.similar-artists-song-list::-webkit-scrollbar {
+    display: none;
+}
+
+.similar-artists-song{
+    margin-top: 5px;
+    height: 25%;
+    width: 100%;
+    /* border: 1px solid gray; */
+    display: flex;
+    padding: 2%;
+}
+
+.similar-artists-image{
+    height: 100%;
+    width: 25%;
+    /* border: 1px solid red; */
+}
+
+.similar-artists-image img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+.similar-artists-image img:hover{
+    opacity: 0.7;
+}
+
+.similar-artists-image i{
+    position: relative;
+    top:-70%;
+    left: 45%;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.similar-artists-image:hover i{
+    visibility: visible;
+    opacity: 0.8;
+}
+
+
+.similar-artists-song-name{
+
+    height: 90%;
+    width: 50%;
+    /* border: 1px solid yellowgreen; */
+    margin-top: 7px;
+    margin-left: 3%;
+}
+
+.similar-artists-song-name1{
+    font-size: 1rem;
+    opacity: 0.9;
+
+}
+
+.similar-artists-song-name1:hover{   
+    opacity: 0.7;
+}
+.similar-artists-song-name2{
+    font-size: 0.7rem;
+    opacity: 0.6;
+    margin-top: 2px;
+}
+
+.similar-artists-song-time{
+    height: 60%;
+    width: 10%;
+    /* border: 1px solid red; */
+    margin-left: 20%;  
+    margin-top: 1%;
+}
+.similar-artists-song-icon{
+    font-size: 0.8rem;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.similar-artists-song-icon:hover{
+    
+    color: fuchsia;
+    opacity: 0.6;
+}
+
+.similar-artists-song-time2{
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-left: 5px;
+}
+
+
+/* song list closed */
+
+
+
+
+
+
+/* ***************Main Right similar Artists section End here***************  */
+
+
+
+
+/*---------------- Main Right section Recently Played Start from here--------------  */
+
+.right-recently-played-section{
+
+    height: 47%;
+    width: 100%;
+    margin-top: 13%;
+    /* border: 1px solid lightslategray; */
+    
+}
+
+.recently-played-heading{
+
+    height: 8%;
+    width: 100%;
+    /* border: 1px solid goldenrod; */
+    display: flex;
+    justify-content: space-between;
+}
+.recently-played-heading-text1{
+    font-family: "New Century Schoolbook, TeX Gyre Schola, serif";
+    font-size: 1.3rem;
+          
+}
+    
+.recently-played-heading-text2{
+    font-family: "New Century Schoolbook, TeX Gyre Schola, serif";
+    font-size: 0.9rem;
+    margin-top: 5px;
+    opacity: 0.8;
+    cursor: pointer;
+          
+}
+    
+.recently-played-heading a{
+    text-decoration: none;
+}
+    
+    /* heading section closed  */
+    
+    
+    /* song list start */
+
+    /* Recently song list section from here */
+
+.recently-song-list{
+
+    height: 92%;
+    width: 100%;
+    
+    padding: 2%;
+    
+    /* border: 1px solid hotpink; */
+    overflow: scroll;
+  
+    /*Important part here we handling the sliding part of page */
+
+    /* border: 2px solid blue; */
+    scrollbar-width: none; /*Hiding scrollbars in  Firefox */
+    -ms-overflow-style: none;  /* Hiding scrollbars in Internet Explorer 10+ */
+}
+
+/* Hiding Scrollbars in GOOGLE CHROME */
+.recently-song-list::-webkit-scrollbar {
+/* Hiding Scrollbars in GOOGLE CHROME */
+    display: none;
+
+}
+.recently-song-column-wise{
+    height:90%;
+    width: 100%;
+    /* border: 2px solid yellowgreen; */   
+}
+
+.list-recently{
+    margin-top: 5%;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    /* border: 2px solid fuchsia; */
+}
+
+.list-recently:hover{
+    box-shadow: 0px 0px 2px 2px lightslategray;
+}
+
+
+
+.recently-image1{
+    height: 100%;
+    width: 25%;
+    /* border: 2px solid pink; */
+    
+}
+
+.recently-image-section img{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    border:1px solid lightslategray;
+    
+}
+
+.recently-image-section img:hover{
+    opacity: 0.7;
+}
+
+.recently-image-section{
+    height: 100%;
+    width: 100%;
+}
+
+.recently-image-section i{
+    visibility: hidden;
+    position: relative;
+    left:45%;
+    top:-70%
+    
+}
+
+.recently-image-section:hover i{
+    /* border: 1px solid green; */
+    visibility: visible;
+    opacity: 0.8;
+    cursor: pointer; 
+}
+
+.recently-text-section{
+    margin-top: 4%;
+    margin-left: 3%;
+    width:50%;
+    height: 60%;
+    display: block;
+    /* border: 1px solid tomato; */
+}
+
+.recently-text-section a{
+    text-decoration: none;
+}
+
+.recently-text1{
+    font-size: 0.9rem;
+    cursor:default;
+    margin-bottom: 2px;
+    opacity: 0.9;
+}
+
+.recently-text1:hover{
+    opacity: 0.8;
+    color:rgb(134, 124, 122);
+}
+
+.recently-text2{
+    font-size: 0.6rem;
+    opacity: 0.6;
+}
+
+.recently-heart-section{
+
+    height: 40%;
+    width: 10%;
+    margin-top:5%;
+    margin-left:11%;
+    /* border: 1px solid gray; */
+}
+
+.recently-heart-section i{
+    margin-left: 25%;
+    cursor: pointer;
+    background: transparent;
+    
+}
+
+.recently-heart-section i:hover{
+    animation: heart-style 1s ease-in-out infinite alternate;
+}
+
+@keyframes heart-style{
+    0%{
+        color: fuchsia;
+    }
+    50%{
+        color: yellowgreen;
+    }
+    100%{
+        color: orangered;
+    }
+}
+
+
+
+
+
+
+
+/* ***************Main Right Recently Played section End here***************  */
+
+
+
+
+
+/* ***************Main Right section End here***************  */
+
+
+
+
+/* ***************Main section End here***************  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* <--------------music controller bottom side of the page Start from here-------------->   */
+
+
+ .music-controller{
+    height: 9%;
+    width: 100%;
+    /* border: 1px solid green; */
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    background-color: rgb(11, 14, 19);
+    padding: 4px;
+}
+/*<---------- Music controller left side section----------> */
+
+
+.music-controller-left{
+    height: 100%;
+    width: 30%;
+    /* border:1px solid rgb(67, 9, 121); */
+    margin-left: 5%;
+    display: flex;
+}
+
+.music-controller-left a img{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid fuchsia; */
+    border-radius: 0px;
+    padding: 3px;
+    box-shadow: 0px 0px 1px 2px silver;
+}
+
+.left-side-icon{
+    height: 30%;
+    width: 20%;
+    /* border: 1px solid white; */
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 12%;
+}
+
+.music-controller-left a {
+    text-decoration: none;
+}
+
+.left-side-icon i{
+    margin-left: 10px;  
+}
+
+.left-side-icon i:hover{
+    color:fuchsia;
+    opacity: 0.7;
+}
+
+.left-side-text{
+    height: 100%;
+    width: 40%;
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-left: 4%;
+    /* border: 1px solid cyan; */
+}
+.left-side-text-secondary{
+    margin-top: 3px;
+    opacity: 0.4;
+    color: snow;   
+}
+
+
+/*<*************** Music controller left side section closed here*************> */
+
+
+
+/*<------------ Music controller Middle side section Start from here--------------> */
+
+.music-controller-middle{
+
+    height: 100%;
+    width: 70%;
+    /* border:1px solid red; */
+    justify-content: center;
+    
+}
+
+.console-image{
+    height:45%;
+    width:40%;
+    /* border:1px solid white; */
+    margin-left: 30%;
+    justify-content: space-between;
+    display: flex;
+    
+}
+.console-image i{
+    margin-top: 4px;
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+.console-image i:active{
+    box-shadow: 0px 0px 2px px whitesmoke;
+    opacity: 1;
+}
+
+.console-slider{
+    height: 50%;
+    width: 60%;
+    margin-left: 19.5%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-around;
+    padding: 6px;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.slider{
+    height: 25%;
+    margin-top: 5px;
+}
+
+.slider-time{
+    /* margin-right: 6px; */
+    margin-bottom: 3px;
+}
+
+.console-slider input{
+    width: 80%;
+    
+}
+
+.console-slider:hover{
+    opacity: 1;
+}
+
+/*<*************** Music controller Middle side section End here**************> */
+
+/*<------------ Music controller Right side section Start from here--------------> */
+
+
+.music-controller-right{
+    height: 100%;
+    width:25%;
+    /* border:1px solid red; */
+    margin-right:7%;
+    
+    display: flex;
+    opacity: 0.9;
+   
+    justify-content: space-between;
+    
+}
+.music-controller-right-icon{   
+    margin-top: 11%; 
+    display: flex;  
+    /* margin-left: 3px; */
+    /* border: 2px solid firebrick; */
+}
+
+.music-controller-right-icon i:active{
+    opacity: 1;
+    color: rgb(128, 125, 125)
+}
+.music-controller-right-controller{
+    margin-top: 10%;
+    
+}
+
+.slider-right{
+    /* appearance:none ; */
+    height:11% ; 
+    border-radius: 18%;
+}
+
+.slider-right:hover{
+    opacity: 0.7;
+}
+
+
+
+
+
+/*<*************** Music controller Right side section End here**************> */
+
+/* <--------------music controller --bottom side of the page End  here-------------->   */
+
+
+ 
+
+           /* --------------------- THANK YOU---------------------- */
